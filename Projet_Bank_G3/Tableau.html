@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----======== ICON ======== -->
+<link rel="shortcut icon" href="ico/icons8-bank-bubbles-96.png" type="image/x-icon">
+
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style/style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+
+    <title>Admin Dashboard Panel</title> 
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="images/logo.png" alt="">
+                
+            </div>
+
+            <span class="logo_name">Bank G3</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li  style="color:rgba(253, 222, 165, 0.616);;"><a href="Tableau.html">
+                 <i  style="color:rgba(253, 222, 165, 0.616);;">   <ion-icon name="analytics-outline"></ion-icon></i>
+                    <span class="link-name">Tableau</span>
+                </a></li>
+                <li><a href="Service_client.html">
+                   <i> <ion-icon name="headset-outline"></ion-icon></i>
+                    <span class="link-name">Service Client</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="Formulaires.html"  onclick="SignoutConfirm()">
+                    <i><ion-icon name="log-out-outline"></ion-icon></i>
+                    <span class="link-name">Déconnexion</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i><ion-icon name="moon-outline"></ion-icon></i>
+                    <span class="link-name">Light | Dark</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Afficher un type de transaction...">
+            </div>
+            
+            <img src="images/profile.jpg" alt="">
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title hello">
+                    <span>Bon retour, </span> <span>John Doe</span>
+                </div>
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Tableau de Bord</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                       <i> <ion-icon name="wallet-outline"></ion-icon><span class="text">Solde du compte</span></i>
+                       
+                       
+                        <span class="number">500,120.00  <span>XAF</span></span>
+                    
+                    </div>
+                    <div class="box box2">
+                        <i><ion-icon name="swap-horizontal-outline"></ion-icon> <span>Opérations</span></i>
+                       
+                        <div class="box21">
+                         
+                            <button class="operation">Retirer de l'argent</button>
+                        </div>
+
+                        <div class="box22">
+                          
+                            <button class="operation">Transférer de l'argent</button>
+                        </div>
+                    </div>
+                   
+                    <div class="box box3">
+                        <span class="text">Carte de Crédit</span>
+                        <span class="number">10,120</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">Historique des transactions</span>
+                </div>
+
+                <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">Name</span>
+                        <span class="data-list">Retrait</span>
+                        <span class="data-list">Transfert</span>
+                        <span class="data-list">Retrait</span>
+                        <span class="data-list">Transfert</span>
+                        <span class="data-list">Retrait</span>
+                        <span class="data-list">Transfert</span>
+                        <span class="data-list">Transfert</span>
+                    </div>
+                    <div class="data email">
+                        <span class="data-title">Name</span>
+                        <span class="data-list">Retrait</span>
+                        <span class="data-list">Transfert</span>
+                        <span class="data-list">Retrait</span>
+                        <span class="data-list">Transfert</span>
+                        <span class="data-list">Retrait</span>
+                        <span class="data-list">Transfert</span>
+                        <span class="data-list">Transfert</span>
+                    </div>
+                    <div class="data joined">
+                        <span class="data-title">Name</span>
+                        <span class="data-list">Retrait</span>
+                        <span class="data-list">Transfert</span>
+                        <span class="data-list">Retrait</span>
+                        <span class="data-list">Transfert</span>
+                        <span class="data-list">Retrait</span>
+                        <span class="data-list">Transfert</span>
+                        <span class="data-list">Transfert</span>
+                    </div>
+                    <div class="data type">
+                        <span class="data-title">Name</span>
+                        <span class="data-list">Retrait</span>
+                        <span class="data-list">Transfert</span>
+                        <span class="data-list">Retrait</span>
+                        <span class="data-list">Transfert</span>
+                        <span class="data-list">Retrait</span>
+                        <span class="data-list">Transfert</span>
+                        <span class="data-list">Transfert</span>
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Name</span>
+                        <span class="data-list">Retrait</span>
+                        <span class="data-list">Transfert</span>
+                        <span class="data-list">Retrait</span>
+                        <span class="data-list">Transfert</span>
+                        <span class="data-list">Retrait</span>
+                        <span class="data-list">Transfert</span>
+                        <span class="data-list">Transfert</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
